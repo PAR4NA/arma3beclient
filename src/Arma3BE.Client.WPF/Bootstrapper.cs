@@ -1,5 +1,7 @@
 ﻿using System.Windows;
+using Arma3BE.Client.Modules.Players;
 using Microsoft.Practices.Unity;
+using Prism.Modularity;
 using Prism.Unity;
 
 namespace Arma3BE.Client.WPF
@@ -19,8 +21,8 @@ namespace Arma3BE.Client.WPF
 
         protected override void ConfigureModuleCatalog()
         {
-            //var catalog = (ModuleCatalog)ModuleCatalog;
-            //catalog.AddModule(typeof(ModuleAModule));
+            var catalog = (ModuleCatalog)ModuleCatalog;
+            catalog.AddModule(typeof(PlayersModule));
         }
     }
 }

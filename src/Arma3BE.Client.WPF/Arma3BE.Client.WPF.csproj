@@ -117,6 +117,12 @@
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arma3BE.Client.Modules.Players\Arma3BE.Client.Modules.Players.csproj">
+      <Project>{a7c2ee16-2174-47d6-b23b-f6af6de55763}</Project>
+      <Name>Arma3BE.Client.Modules.Players</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
