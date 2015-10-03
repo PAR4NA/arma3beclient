@@ -14,7 +14,8 @@ namespace Arma3BE.Client.WPF
 
         protected override void InitializeShell()
         {
-            Application.Current.MainWindow.Show();
+            Application.Current.MainWindow = Shell as Window;
+            Application.Current.MainWindow?.Show();
         }
 
         protected override void ConfigureModuleCatalog()
