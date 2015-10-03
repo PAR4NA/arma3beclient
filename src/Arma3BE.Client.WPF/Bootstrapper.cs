@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using Microsoft.Practices.Unity;
-using Prism.Modularity;
 using Prism.Unity;
 
 namespace Arma3BE.Client.WPF

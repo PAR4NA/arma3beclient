@@ -5,7 +5,6 @@ using System.Text.RegularExpressions;
 using Arma3BE.Server.Models;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Helpers.Views;
-using Arma3BEClient.Libs.Context;
 using Arma3BEClient.Libs.Repositories;
 
 namespace Arma3BEClient.Helpers

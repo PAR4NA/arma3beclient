@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Arma3BE.Server;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Helpers.Views;
-using Arma3BEClient.Libs.Context;
 using Arma3BEClient.Libs.ModelCompact;
 using Arma3BEClient.Libs.Repositories;
 using Arma3BEClient.Libs.Tools;
@@ -56,8 +55,6 @@ namespace Arma3BEClient.Helpers
                     {
                         if (player.Name != p.Name || player.LastIp != p.IP)
                         {
-
-
                             historyToAdd.Add(new PlayerHistory
                             {
                                 IP = player.LastIp,
@@ -166,7 +163,6 @@ namespace Arma3BEClient.Helpers
                     var user = context.GetPlayer(player.Guid);
                     if (user != null)
                     {
-
                         context.AddNotes(user.Id, $"Kicked with reason: {totalreason}");
                         user.Comment = $"{user.Comment} | {reason}";
                         context.UpdatePlayerComment(user.GUID, user.Comment);

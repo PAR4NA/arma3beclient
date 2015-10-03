@@ -11,7 +11,7 @@ namespace Arma3BE.Client.WPF
         {
             base.OnStartup(e);
 
-            Bootstrapper bs = new Bootstrapper();
+            var bs = new Bootstrapper();
             bs.Run();
         }
     }

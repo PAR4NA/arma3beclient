@@ -6,7 +6,6 @@ namespace Arma3BE.Client.Modules.Players
     {
         public void Initialize()
         {
-            
         }
     }
 }

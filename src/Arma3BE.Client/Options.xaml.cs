@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Linq;
 using System.Windows;
 using Arma3BEClient.Libs.Repositories;
 using Arma3BEClient.ViewModel;
-using Xceed.Wpf.AvalonDock.Layout;
 using Xceed.Wpf.Toolkit;
 
 namespace Arma3BEClient
@@ -50,9 +48,7 @@ namespace Arma3BEClient
                 using (var chat = new ChatRepository())
                 {
                     if (chat.HaveChatLogs(dbm.Id)) e.Cancel = true;
-                    
                 }
-                
             }
         }
 

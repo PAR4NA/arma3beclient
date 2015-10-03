@@ -124,10 +124,10 @@ namespace Arma3BEClient.Libs.Repositories
         {
             using (var dc = new Arma3BeClientContext())
             {
-                dc.Comments.Add(new Note()
+                dc.Comments.Add(new Note
                 {
                     PlayerId = id,
-                    Text = s,
+                    Text = s
                 });
                 dc.SaveChanges();
             }
@@ -139,11 +139,11 @@ namespace Arma3BEClient.Libs.Repositories
     {
         public PlayerDto()
         {
-            this.LastSeen = DateTime.UtcNow;
+            LastSeen = DateTime.UtcNow;
         }
 
         [Key]
-        public System.Guid Id { get; set; }
+        public Guid Id { get; set; }
 
         public string GUID { get; set; }
         public string Name { get; set; }

@@ -63,7 +63,7 @@ namespace Arma3BEClient.Libs.Repositories
         {
             using (var dc = new Arma3BeClientContext())
             {
-                dc.ServerInfo.RemoveRange(dc.ServerInfo.Where(x=>x.Id == serverInfoId));
+                dc.ServerInfo.RemoveRange(dc.ServerInfo.Where(x => x.Id == serverInfoId));
                 dc.SaveChanges();
             }
         }
