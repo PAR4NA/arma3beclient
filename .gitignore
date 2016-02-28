@@ -183,3 +183,4 @@ UpgradeLog*.htm
 FakesAssemblies/
 src/.vs/
 *.orig
+src/Arma3BE.Web/App_Data/Elmah/

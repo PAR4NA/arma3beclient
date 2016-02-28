@@ -64,9 +64,12 @@ namespace Arma3BEClient.Chat
         {
             var text = $"[ {message.Date:HH:mm:ss} ]  {message.Message}\n";
             var color = ServerMonitorModel.GetMessageColor(message);
-
             var brush = new SolidColorBrush(color);
-            var span = new Span {Foreground = brush};
+
+            tbBox.Inlines.Add(new Run(text) {Foreground = brush});
+
+
+            var span = new Span { Foreground = brush };
             span.Inlines.Add(text);
             _paragraph.Inlines.Add(span);
 
